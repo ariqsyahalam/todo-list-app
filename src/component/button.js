@@ -81,23 +81,22 @@ export const ButtonStyled = styled.div`
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      border: 1.5px solid #000000;
+      /* border: 1.5px solid #000000; */
       border-radius: 4px;
       height: 100%;
       width: 100%;
       background-color: ${(props) => color(props.type).fill};
-      font-family: Montserrat;
       font-style: normal;
       font-weight: 600;
-      font-size: 13px;
-      line-height: 15px;
+      font-size: 24px;
+      line-height: 31.68px;
       color: ${(props) => color(props.type).font};
     }
   }
 
   .button-single {
     /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)); */
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     color: ${(props) => color(props.type).font};
     background: ${(props) => color(props.type).fill};
     border: 2px solid ${(props) => color(props.type).border};
