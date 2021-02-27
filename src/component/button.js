@@ -2,19 +2,16 @@ import styled from "styled-components";
 // import { ButtonStyled } from "./styled";
 
 export const Button = (props) => {
-
   const { type, text, onClick, className } = props;
 
-   return (
+  return (
     <ButtonStyled type={type}>
-        <div className={`button-single ${className}`} onClick={onClick}>
-          {text}
-        </div>
+      <div className={`button-single ${className}`} onClick={onClick}>
+        {text}
+      </div>
     </ButtonStyled>
   );
 };
-
-
 
 const color = (type) => {
   switch (type) {
@@ -64,8 +61,9 @@ const color = (type) => {
 };
 
 export const ButtonStyled = styled.div`
-  .button-wrapper { // tebal bordernya
-    border-radius: 8px;
+  padding: 16px 0 8px 0;
+  .button-wrapper {
+    border-radius: 2px;
     width: 154px;
     height: 36px;
     display: flex;
@@ -82,7 +80,7 @@ export const ButtonStyled = styled.div`
       justify-content: center;
       cursor: pointer;
       /* border: 1.5px solid #000000; */
-      border-radius: 4px;
+      border-radius: 2px;
       height: 100%;
       width: 100%;
       background-color: ${(props) => color(props.type).fill};
@@ -100,7 +98,7 @@ export const ButtonStyled = styled.div`
     color: ${(props) => color(props.type).font};
     background: ${(props) => color(props.type).fill};
     border: 2px solid ${(props) => color(props.type).border};
-    border-radius: 8px;
+    border-radius: 4px;
     width: fit-content;
     align-items: center;
     justify-content: center;

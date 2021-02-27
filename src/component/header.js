@@ -19,6 +19,7 @@ export const Styled = styled.div`
 .header-wrapper{
     background-color: #13293D;
     display: flex;
+    padding: 0 15%;
     
     .title {
         font-size: 96px;
@@ -30,7 +31,7 @@ export const Styled = styled.div`
         padding-top: 89px;
     }
     .icon{
-        width: 66.5px;
+        /* width: 66.5px; */
         height: 76px;
         margin-top: 116px;
         padding-left: 32px;

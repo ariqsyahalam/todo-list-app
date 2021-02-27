@@ -1,11 +1,8 @@
 import styled from "styled-components";
 import React from "react";
-import { Input } from "semantic-ui-react";
-import { Button, Icon, Label } from 'semantic-ui-react'
+import { Button, Icon } from "semantic-ui-react";
 
-export const AddTask = (props) => {
-  const { title, date } = props;
-
+export const AddTask = () => {
   return (
     <>
       <Styled>

@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import bin from "./assets/trash.png";
 
+
 export const ActivityCard = (props) => {
   const { title, date } = props;
+
 
   return (
     <>
@@ -26,6 +28,7 @@ export const ActivityCard = (props) => {
 
 export const Styled = styled.div`
   .card-wrapper {
+    margin: 32px 0;
     display: flex;
     flex-direction: grid;
     align-items: flex-start;

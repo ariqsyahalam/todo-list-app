@@ -3,16 +3,23 @@ import { Button } from "./component/button";
 import { ActivityCard } from "./component/activityCard";
 import { HeaderTitle } from "./component/header";
 import { AddTask } from "./component/addTask";
+import { Subtitle } from "./component/subtitle";
+import { Filter } from "./component/filterBar";
 
 function App() {
   return (
     <div className="App">
       <HeaderTitle />
-      <Button text="New Task" />
-      <Button text="Task List" />
-      <p>test</p>
-      <ActivityCard title="Activity #1" date="February" />
-      <AddTask/>
+      <div style={{ padding: "0 15%" }}>
+        <Subtitle/>
+        <Button text="New Task" />
+        <AddTask />
+        <Button text="Task List" />
+        <Filter/>
+        <ActivityCard title="Activity #1" date="February" />
+        <ActivityCard title="Activity #1" date="February" />
+        <ActivityCard title="Activity #1" date="February" />
+      </div>
     </div>
   );
 }
